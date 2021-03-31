@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js i nodemon -g
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\F-Secure\ssh;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk\bin;D:\hadoop-2.6.0\bin;D:\hadoop-2.6.0\sbin;D:\hadoop-2.6.0\share\hadoop\common\*;D:\hadoop-2.6.0\share\hadoop\hdfs;D:\hadoop-2.6.0\share\hadoop\hdfs\lib\*;D:\hadoop-2.6.0\share\hadoop\hdfs\*;D:\hadoop-2.6.0\share\hadoop\yarn\lib\*;D:\hadoop-2.6.0\share\hadoop\yarn\*;D:\hadoop-2.6.0\share\hadoop\mapreduce\lib\*;D:\hadoop-2.6.0\share\hadoop\mapreduce\*;D:\hadoop-2.6.0\share\hadoop\common\lib\*;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLI\bin\;D:\hadoop-2.6.0\;%HADOOP_HOME%\bin;%HADOOP_HOME%;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\Shir\AppData\Local\Microsoft\WindowsApps;C:\Users\Shir\AppData\Local\Programs\Microsoft VS Code\bin;D:\hadoop-2.6.0\bin;D:\hadoop-2.6.0\;C:\Users\Shir\AppData\Roaming\npm;C:\Users\Shir\AppData\Local\Yarn\bin;C:\Users\Shir\.dotnet\tools
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.18.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\Shir\Desktop\interview_preperation\employee-management-system\package.json: Unexpected token / in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  // Notice I am using concurrently to run the React app and Server at the same time. The –kill-others-on-fail flag will kill other processes if one exits with a non zero status code.
+  
+  {
+      "name": "employee-management-system",
+      "version": "1.0.0",
+      "scripts": {
+        "client": "cd client && yarn start",
+        "server": "nodemon server.js",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+      },
+      "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4"
+      },
+      "devDependencies": {
+        "concurrently": "^4.0.1"
+      }
+    }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
