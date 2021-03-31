@@ -22,10 +22,3 @@ LoggedInPage:
     2. dropDown button to update employee Status
     3. employees list- contains all other employees and their status. employees on vacation are red colored
         list has search by name and filter by status options (including intersection both options)
-
-Improvements are needed:
-1. I have code duplications - in dropdown buttons and in Forms at landing page - in order to improve it I had to design different the handlers functions and shared states and I needed more time
-2. logged in user data - I kept data in browser local storage. I believe I should use Context instead but then (according to what I read) LoggedInPage should be descendant of LandingPage and I needed more time to figure out this issue. 
-3. I didn't debug error handling at all and didn't add a message to the user when action failed - for example: if login fails then nothing  Happens.
-4. employees table is re-rendered when a logged-in employee changes his status - maybe it should happen more frequently.
-5. check on call e.preventDefault() - in most cases react should handle but there are some cases not. - I didn't figure it out
