@@ -1,5 +1,7 @@
 # Employee status management system
 
+Application to managing employee status with client-server architecture. Built with Node.js, React, MongoDB. Communication between the client and server based on REST. 
+
 ### Running instructions:
 - In order to run whole application: from root folder run "yarn dev"
 - In order to run server: from root folder run "node server.js"
