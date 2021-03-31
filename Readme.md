@@ -7,7 +7,7 @@ Application to managing employee status with client-server architecture. Built w
 - In order to run server: from root folder run "node server.js"
 - please make sure to add string connection to mongoDB on "server.js" file
 
-### description:
+### Description:
 
 ##### server side :
 - database manipulation functions
